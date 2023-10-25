@@ -1,0 +1,149 @@
+/* Coded by Daniel Munteanu */
+
+body{
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+#carousel{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#ConstructionSite1{
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+#ComercialSite1{
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+#ResidentialSite1{
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+#navbar{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    padding: 2%;
+}
+
+.navbar-brand{
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+li{
+    font-size: 1.5rem;
+}
+
+#offersPage{
+    bottom: 15rem;
+}
+
+#line{
+    background-color: #FFBB02;
+    width: 10rem;
+    height: 0.3rem;
+    border-radius: 10px;
+}
+
+#seeOffersBtn{
+    filter: opacity(1);
+    border: #FFBB02 2px solid;
+    border-radius: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FBFBFB;
+    width: 20rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#seeOffersBtn:hover{
+    background-color: #FFBB02;
+    transition: 0.5s;
+}
+
+.row{
+    padding: 2%;
+}
+
+#ConstructionSite1Info{
+    font-size: 1.5rem;
+}
+
+#WelcomeToBrickOnBrick{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: white;
+}
+
+@media screen and (max-width: 800px){
+    #ConstructionSite1Info{
+        font-size: 1rem;
+    }
+    #WelcomeToBrickOnBrick{
+        font-size: 1.5rem;
+    }
+    #seeOffersBtn{
+        width: 10rem;
+    }
+    #offersPage{
+        bottom: 20rem;
+    }
+}
+
+@media screen and (max-height: 950px) {
+    #offersPage{
+        bottom: 15rem;
+    }
+}
+
+@media screen and (max-height: 770px) {
+    #offersPage{
+        bottom: 5rem;
+    }
+    #seeOffersBtn{
+        width: 10rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    #offersPage{
+        bottom: 1rem;
+    }
+    #seeOffersBtn{
+        width: 7rem;
+        height: 3rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 580px){
+    #ConstructionSite1Info{
+        font-size: 1rem;
+    }
+    #WelcomeToBrickOnBrick{
+        font-size: 1.2rem;
+    }
+    #seeOffersBtn{
+        width: 10rem;
+        font-size: 1rem;
+    }
+}
+
