@@ -4,12 +4,24 @@ body {
     margin: 0;
 }
 
+.stacker {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
 #itemsContainer {
     display: flex;
     justify-content: space-between;
 }
+button {
+
+}
+
 
 .items {
+    gap: 2rem;
+    flex-wrap: wrap;
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -38,6 +50,7 @@ li {
 }
 
 a {
+    flex: 1 1 0;
     width: 196px;
     text-align: center;
 }
@@ -54,6 +67,7 @@ a {
     font-size: 1.3rem;
     margin-bottom: 5rem;
 }
+
 
 .nav-link {
     color: black;
