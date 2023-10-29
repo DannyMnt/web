@@ -72,6 +72,8 @@ h1{
 }
 
 
+
+
 .outerProgress{
     
     margin-top: 1rem;
@@ -96,22 +98,24 @@ h1{
 
 
 
-.card {
+.projectCard {
     border: none;
-    border-radius: 10px
+    border-radius: 10px;    
 }
+
 
 
 .projectBadge {
     background-color: #FFBB02;
     width: 100px;
     height: 25px;
-    
+    font-size:small;
     border-radius: 5px;
     display: flex;
     color: black;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    font-weight: bold;
 }
 
 .cardImage{
@@ -133,7 +137,7 @@ h1{
         font-family: 'IBM Plex Mono', monospace;
         font-style: normal;
         font-weight: 400;
-        line-height: normal
+        line-height: normal;
     }
   };
     
