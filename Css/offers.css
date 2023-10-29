@@ -168,3 +168,100 @@ li {
     padding: 2%;
   }
 }
+
+/* Tring a button */
+
+.testBtn{
+  border: none;
+  color:#C29204;
+}
+
+.test{
+  position: relative;
+  display: inline-block;
+  padding: 25px, 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #C29204;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.test span{
+  position: absolute;
+}
+
+.test span:nth-child(1){
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #C29204);
+  animation: animation1 1s infinite;
+}
+
+@keyframes animation1 {
+  0%{
+      left: -100%;
+  }
+  100%{
+      left: 100%;
+  }
+}
+
+.test span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #C29204);
+  animation: animation2 1s infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes animation2 {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+.test span:nth-child(3){
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(270deg, transparent, #C29204);
+  animation: animation3 1s infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes animation3 {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+.test span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #C29204);
+  animation: animation4 1s infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animation4 {
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
