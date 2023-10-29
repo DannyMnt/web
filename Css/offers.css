@@ -104,25 +104,23 @@ li{
     width: 10rem;
     height: 4rem;
     display: inline-block;
-    margin-top: 1rem;
     cursor: pointer;
-    position: absolute;
     bottom: 1.5rem;
 }
 
-.seeImagesBtn{
-    left: 2rem;
-}
-
-.orderBtn{
-    right: -4rem;
+.buttons{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 1rem;
 }
 
 .orderBtn{
     background-color: #ebb000;
-    margin-right: 6rem;
-    font-weight: bold;
-    cursor: pointer;
 }  
 
 .orderBtn:hover, .seeImagesBtn:hover{
@@ -137,30 +135,18 @@ li{
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .seeImagesBtn, .orderBtn{
-        position: relative;
-        display: block;
-        bottom: -1rem;
-    }   
-    .overlay-text1 p{
-        font-size: 0.9rem;
+@media screen and (max-width: 1200px) { 
+    .overlay-text1{
+        font-size: 13px;
+    }
+
+    .buttons{
+        gap: 0.1rem;
     }
 }
 
-@media screen and (max-width: 767px){
-    .seeImagesBtn, .orderBtn{
-        position: absolute;
-        display: inline-block;
-        width: 10rem;
-        height: 4rem;
-        bottom: 1rem;
+@media screen and (max-width: 990px) {
+    #img1, #img2, #img3, #img4{
+        padding: 2%;
     }
 }
-
-@media screen and (max-width: 400px) {
-    .seeImagesBtn, .orderBtn{
-        width: 7rem;
-    }
-}
-
