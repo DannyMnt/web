@@ -1,19 +1,19 @@
 /* Coded by Daniel Munteanu */
 
-body{
-    font-family: 'IBM Plex Mono', monospace;
-    background-color: #ffffff;
-    margin: 0;
-    animation: animation 0.5s;
+body {
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #ffffff;
+  margin: 0;
+  animation: animation 0.5s;
 }
 
 @keyframes animation {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #navbar{
@@ -106,6 +106,20 @@ li{
     display: inline-block;
     cursor: pointer;
     bottom: 1.5rem;
+.seeImagesBtn,
+.orderBtn {
+  background-color: transparent;
+  border: 3px solid #ebb000;
+  border-radius: 40px;
+  padding: 2%;
+  color: white;
+  width: 10rem;
+  height: 4rem;
+  display: inline-block;
+  margin-top: 1rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: 1.5rem;
 }
 
 .buttons{
@@ -117,11 +131,23 @@ li{
     left: 50%;
     transform: translate(-50%, -50%);
     gap: 1rem;
+.seeImagesBtn {
+  left: 2rem;
+}
+
+.orderBtn {
+  right: -4rem;
 }
 
 .orderBtn{
     background-color: #ebb000;
 }  
+.orderBtn {
+  background-color: #ebb000;
+  margin-right: 6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 .orderBtn:hover, .seeImagesBtn:hover{
     filter: brightness(115%);
@@ -143,10 +169,44 @@ li{
     .buttons{
         gap: 0.1rem;
     }
+@media screen and (max-width: 1200px) {
+  .seeImagesBtn,
+  .orderBtn {
+    position: relative;
+    display: block;
+    bottom: -1rem;
+  }
+  .overlay-text1 p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .seeImagesBtn,
+  .orderBtn {
+    position: absolute;
+    display: inline-block;
+    width: 10rem;
+    height: 4rem;
+    bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 990px) {
     #img1, #img2, #img3, #img4{
         padding: 2%;
     }
+}
+@media screen and (max-width: 400px) {
+  .seeImagesBtn,
+  .orderBtn {
+    width: 7rem;
+  }
+
+  .orderBtn {
+    right: 6.5rem;
+  }
+  .overlay-text1 {
+    left: 7rem;
+  }
 }
