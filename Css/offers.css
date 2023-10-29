@@ -2,8 +2,18 @@
 
 body {
   font-family: "IBM Plex Mono", monospace;
-  background-color: #dcdcdc;
+  background-color: #ffffff;
   margin: 0;
+  animation: animation 0.5s;
+}
+
+@keyframes animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*
@@ -17,23 +27,10 @@ Nav underline
   display: block;
 }
 
-#ourOffersTitle {
-  background-color: #c29204;
-  width: 100%;
-  height: 6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 1.3rem;
-  margin-bottom: 5rem;
-}
-img {
-  object-fit: cover;
-  border-radius: 40px;
-  width: 27rem;
-  height: 30rem;
-  filter: brightness(70%);
+.navbar-brand {
+  color: rgb(66, 66, 66);
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 #img3 {
@@ -48,10 +45,46 @@ img {
   transition: ease-in 0.3s;
 }
 
+#ourOffersTitle {
+  background-color: #ebb000;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 5rem;
+}
+
+.nav-link {
+  color: rgb(66, 66, 66);
+}
+
+.img-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.img-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 35rem;
+  border-radius: 40px;
+  filter: brightness(70%);
+}
+
+.img-container:hover {
+  filter: brightness(80%);
+  transition: ease-in 0.3s;
+}
+
 .overlay-text1 {
   position: absolute;
   top: 10%;
-  left: 10%;
   transform: translate(0%, 0%);
   color: white;
   text-align: center;
@@ -61,7 +94,7 @@ img {
 
 .overlay-text1 p {
   margin: 0;
-  width: 25rem;
+  width: 100%;
 }
 
 .offerTitle {
@@ -73,7 +106,7 @@ img {
 .seeImagesBtn,
 .orderBtn {
   background-color: transparent;
-  border: 3px solid #c29204;
+  border: 3px solid #ebb000;
   border-radius: 40px;
   padding: 2%;
   color: white;
@@ -87,15 +120,15 @@ img {
 }
 
 .seeImagesBtn {
-  left: 0.5rem;
+  left: 2rem;
 }
 
 .orderBtn {
-  right: 0.5rem;
+  right: -4rem;
 }
 
 .orderBtn {
-  background-color: #c29204;
+  background-color: #ebb000;
   margin-right: 6rem;
   font-weight: bold;
   cursor: pointer;
@@ -103,23 +136,44 @@ img {
 
 .orderBtn:hover,
 .seeImagesBtn:hover {
-  filter: brightness(130%);
+  filter: brightness(115%);
   transition: ease-in 0.25s;
 }
 
-@media screen and (max-width: 1030px) {
-  .seeImagesBtn {
-    left: 1rem;
-  }
-
+@media screen and (max-width: 1600px) {
+  .seeImagesBtn,
   .orderBtn {
-    right: 1.7rem;
+    width: 7rem;
   }
 }
 
-@media screen and (max-width: 1391px) {
-  .seeImagesBtn {
-    left: 4rem;
+@media screen and (max-width: 1200px) {
+  .seeImagesBtn,
+  .orderBtn {
+    position: relative;
+    display: block;
+    bottom: -1rem;
+  }
+  .overlay-text1 p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .seeImagesBtn,
+  .orderBtn {
+    position: absolute;
+    display: inline-block;
+    width: 10rem;
+    height: 4rem;
+    bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .seeImagesBtn,
+  .orderBtn {
+    width: 7rem;
   }
 
   .orderBtn {
