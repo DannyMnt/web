@@ -2,8 +2,18 @@
 
 body{
     font-family: 'IBM Plex Mono', monospace;
-    background-color: #DCDCDC;
+    background-color: #ffffff;
     margin: 0;
+    animation: animation 0.5s;
+}
+
+@keyframes animation {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 #navbar{
@@ -13,7 +23,7 @@ body{
 }
 
 .navbar-brand{
-    color: black;
+    color: rgb(66, 66, 66);
     font-weight: bold;
     font-size: 2rem;
 }
@@ -27,7 +37,7 @@ li{
 }
 
 #ourOffersTitle{
-    background-color: #C29204;
+    background-color: #ebb000;
     width: 100%;
     height: 6rem;
     display: flex;
@@ -40,22 +50,26 @@ li{
 }
 
 .nav-link{
-    color: black;
+    color: rgb(66, 66, 66);
 }
 
-img{
+.img-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img-container img{
     object-fit: cover;
+    width: 100%;
+    height: 35rem;
     border-radius: 40px;
-    width: 27rem;
-    height: 30rem;
     filter: brightness(70%);
 }
 
-#img3{
-    filter: brightness(120%);
-}
-
-#img1:hover, #img2:hover, #img3:hover, #img4:hover{
+.img-container:hover{
     filter: brightness(80%);
     transition: ease-in 0.3s;
 }
@@ -63,7 +77,6 @@ img{
 .overlay-text1{
     position: absolute;
     top: 10%;
-    left: 10%;
     transform: translate(0%, 0%);
     color: white;
     text-align: center;
@@ -73,7 +86,7 @@ img{
 
 .overlay-text1 p{
     margin: 0;
-    width: 25rem;
+    width: 100%;
 }
 
 .offerTitle{
@@ -84,7 +97,7 @@ img{
 
 .seeImagesBtn, .orderBtn{
     background-color: transparent;
-    border: 3px solid #C29204;
+    border: 3px solid #ebb000;
     border-radius: 40px;
     padding: 2%;
     color: white;
@@ -98,45 +111,56 @@ img{
 }
 
 .seeImagesBtn{
-    left: 0.5rem;
+    left: 2rem;
 }
 
 .orderBtn{
-    right: 0.5rem;
+    right: -4rem;
 }
 
 .orderBtn{
-    background-color: #C29204;
+    background-color: #ebb000;
     margin-right: 6rem;
     font-weight: bold;
     cursor: pointer;
 }  
 
 .orderBtn:hover, .seeImagesBtn:hover{
-    filter: brightness(130%);
+    filter: brightness(115%);
     transition: ease-in 0.25s;
 }
 
-@media screen and (max-width: 1030px) {
-    .seeImagesBtn{
-        left: 1rem;
-    }
-    
-    .orderBtn{
-        right: 1.7rem;
+
+@media screen and (max-width: 1600px) {
+    .seeImagesBtn, .orderBtn{
+        width: 7rem;
     }
 }
 
-@media screen and (max-width: 1391px) {
-    .seeImagesBtn{
-        left: 4rem;
+@media screen and (max-width: 1200px) {
+    .seeImagesBtn, .orderBtn{
+        position: relative;
+        display: block;
+        bottom: -1rem;
+    }   
+    .overlay-text1 p{
+        font-size: 0.9rem;
     }
-    
-    .orderBtn{
-        right: 6.5rem;
+}
+
+@media screen and (max-width: 767px){
+    .seeImagesBtn, .orderBtn{
+        position: absolute;
+        display: inline-block;
+        width: 10rem;
+        height: 4rem;
+        bottom: 1rem;
     }
-    .overlay-text1{
-        left: 7rem;
+}
+
+@media screen and (max-width: 400px) {
+    .seeImagesBtn, .orderBtn{
+        width: 7rem;
     }
 }
 
