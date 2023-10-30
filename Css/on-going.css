@@ -1,19 +1,10 @@
 /* Coded by Tadeáš Juříček*/
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
 body{
     font-family: 'IBM Plex Mono', monospace;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     background-color: #DCDCDC;
-    
+    margin: 0;
 }
-
 
 
 #navbar{
@@ -40,6 +31,14 @@ body{
     color: black;
 }
 
+.nav-item:nth-child(3)::after {
+    content: "";
+    width: 100%;
+    height: 0.2rem;
+    background-color: #c29204;
+    display: block;
+  }
+
 .header{
     background-color: #C29204;
     width: 100%;
@@ -49,18 +48,20 @@ body{
     align-items: center;
     color: white;
     font-size: 1.3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
-h1{
-    color: white;
-    text-align: center;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 
+.biggerContainer{
+    max-width: 1400px;
+}
+
+
+.projectList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .list{
@@ -70,9 +71,6 @@ h1{
 .list li{
     border-color: #C29204;
 }
-
-
-
 
 .outerProgress{
     
@@ -89,20 +87,16 @@ h1{
     background: #C29204;   
     height: 30px; 
     color: black;  
+    height: 100%;
 }
-
-.projectImg{
-    max-width:100%;
-    max-height:100%;
-}
-
 
 
 .projectCard {
     border: none;
-    border-radius: 10px;    
+    border-radius: 10px;  
+    margin: 1rem;
+    height: 46rem;
 }
-
 
 
 .projectBadge {
@@ -116,6 +110,7 @@ h1{
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    margin: 10px;
 }
 
 .cardImage{
@@ -127,17 +122,13 @@ h1{
 }
 
 
-
-
-@media screen and (max-width: 400px) {
-    h1{
-        font-size: 1rem;
-        color: white;
-        text-align: center;
-        font-family: 'IBM Plex Mono', monospace;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+/*So the images arent as streched on tablets*/
+  @media screen and (max-width: 992px)  and (min-width: 768px) {
+    .projectCard {
+        border: none;
+        border-radius: 10px;  
+        margin: 1rem;
+        height: 58rem;
     }
-  };
+  }
     
