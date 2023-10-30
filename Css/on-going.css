@@ -2,10 +2,19 @@
 
 body{
     font-family: 'IBM Plex Mono', monospace;
-    background-color: #DCDCDC;
+    background-color: #ffffff;
+    animation: animation 0.5s;
     margin: 0;
 }
 
+@keyframes animation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
 #navbar{
     z-index: 2;
@@ -37,12 +46,12 @@ body{
     content: "";
     width: 100%;
     height: 0.2rem;
-    background-color: #c29204;
+    background-color: #ebb000;
     display: block;
   }
 
 .header{
-    background-color: #C29204;
+    background-color: #ebb000;
     width: 100%;
     height: 6rem;
     display: flex;
@@ -100,7 +109,7 @@ h1 {
 
 .innerProgress{
     border-radius: 1.875rem;
-    background: #C29204;   
+    background: #ebb000;   
     height: 30px; 
     color: black;  
     height: 100%;
