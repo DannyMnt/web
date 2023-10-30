@@ -59,18 +59,18 @@ li{
     margin-left: auto;
 }
 
-#offersPage{
+.offersPage{
     bottom: 20rem;
 }
 
-#line{
+.line{
     background-color: #FFBB02;
     width: 10rem;
     height: 0.3rem;
     border-radius: 10px;
 }
 
-#seeOffersBtn{
+.seeOffersBtn{
     filter: opacity(1);
     border: #FFBB02 2px solid;
     border-radius: 40px;
@@ -84,7 +84,7 @@ li{
     justify-content: center;
 }
 
-#seeOffersBtn:hover{
+.seeOffersBtn:hover{
     background-color: #FFBB02;
     transition: 0.5s;
 }
@@ -93,11 +93,11 @@ li{
     padding: 2%;
 }
 
-#ConstructionSite1Info{
+.ConstructionSiteInfo{
     font-size: 1.5rem;
 }
 
-#WelcomeToBrickOnBrick{
+.WelcomeToBrickOnBrick{
     font-size: 3rem;
     font-weight: bold;
 }
@@ -110,38 +110,38 @@ li{
     #ConstructionSite1Info{
         font-size: 1rem;
     }
-    #WelcomeToBrickOnBrick{
+    .WelcomeToBrickOnBrick{
         font-size: 1.5rem;
     }
-    #seeOffersBtn{
+    .seeOffersBtn{
         width: 10rem;
     }
-    #offersPage{
+    .offersPage{
         bottom: 20rem;
     }
 }
 
 @media screen and (max-height: 950px) {
-    #offersPage{
+    .offersPage{
         bottom: 15rem;
     }
 }
 
 @media screen and (max-height: 770px) {
-    #offersPage{
+    .offersPage{
         bottom: 5rem;
     }
-    #seeOffersBtn{
+    .seeOffersBtn{
         width: 10rem;
         font-size: 1rem;
     }
 }
 
 @media screen and (max-height: 600px) {
-    #offersPage{
+    .offersPage{
         bottom: 1rem;
     }
-    #seeOffersBtn{
+    .seeOffersBtn{
         width: 7rem;
         height: 3rem;
         font-size: 0.7rem;
@@ -152,10 +152,10 @@ li{
     #ConstructionSite1Info{
         font-size: 1rem;
     }
-    #WelcomeToBrickOnBrick{
+    .WelcomeToBrickOnBrick{
         font-size: 1.2rem;
     }
-    #seeOffersBtn{
+    .seeOffersBtn{
         width: 10rem;
         font-size: 1rem;
     }

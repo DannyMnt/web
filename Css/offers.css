@@ -171,11 +171,6 @@ li {
 
 /* Tring a button */
 
-.testBtn{
-  border: none;
-  color:#C29204;
-}
-
 .test{
   position: relative;
   display: inline-block;
