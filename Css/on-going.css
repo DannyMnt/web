@@ -2,7 +2,7 @@
 
 body{
     font-family: 'IBM Plex Mono', monospace;
-    background-color: #ffffff;
+    background-color: #DCDCDC;
     animation: animation 0.5s;
     margin: 0;
 }
@@ -75,6 +75,10 @@ body{
     align-items: center;
 }
 
+.list li{
+  border-color: #C29204;
+}
+
 .header {
   background-color: #ebb000;
   width: 100%;
@@ -87,15 +91,6 @@ body{
   margin-bottom: 5rem;
 }
 
-h1 {
-  color: white;
-  text-align: center;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
 
 .outerProgress{
     
