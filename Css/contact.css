@@ -1,173 +1,186 @@
 /* Coded by Luca Mouawad */
 
 body {
-    font-family: 'IBM Plex Mono', monospace;
-    background-color: #ffffff;
-    margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #ffffff;
+  margin: 0;
+  animation: transition 0.5s;
+}
+
+@keyframes transition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.nav-item:nth-child(4)::after {
+  content: "";
+  width: 100%;
+  height: 0.2rem;
+  background-color: #ebb000;
+  display: block;
 }
 
 .stacker {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
 }
 
 #itemsContainer {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-button {
-
-}
-
 
 .items {
-    gap: 2rem;
-    flex-wrap: wrap;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #454F6E;
-    font-size: 40px;
-    font-family: IBM Plex Mono;
-    font-weight: 700;
+  gap: 2rem;
+  flex-wrap: wrap;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #454f6e;
+  font-size: 40px;
+  font-family: IBM Plex Mono;
+  font-weight: 700;
 }
 
 #navbar {
-    z-index: 2;
-    width: 101%;
-    padding: 2%;
-    justify-content: space-between;
+  z-index: 2;
+  width: 101%;
+  padding: 2%;
+  justify-content: space-between;
 }
 
 .navbar-brand {
-    color: black;
-    font-weight: bold;
-    font-size: 2rem;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 li {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 a {
-    flex: 1 1 0;
-    width: 196px;
-    text-align: center;
+  flex: 1 1 0;
+  width: 196px;
+  text-align: center;
 }
-
 
 #banner {
-    background-color: #C29204;
-    width: 100%;
-    height: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 1.3rem;
-    margin-bottom: 5rem;
+  background-color: #ebb000;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 5rem;
 }
-
 
 .nav-link {
-    color: black;
+  color: black;
 }
 
-/* Trying a button */
+/* Coded by Daniel Munteanu */
+/* E-mail Buttons */
 
-.testBtn{
-    border: none;
-    color:#C29204;
+.emailBtn {
+  margin-top: 3rem;
+  font-weight: normal;
+  position: relative;
+  display: inline-block;
+  color: #ebb000;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.emailBtn span {
+  position: absolute;
+}
+
+.emailBtn:hover{
+  font-size: 2rem;
+  box-shadow: 3px 3px #ebb000;
+}
+
+.emailBtn span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #ebb000);
+  animation: animation1 1s infinite;
+}
+
+@keyframes animation1 {
+  0% {
+    left: -100%;
   }
-  
-  .test{
-    position: relative;
-    display: inline-block;
-    padding: 25px, 30px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #C29204;
-    transition: 0.5s;
-    overflow: hidden;
+  100% {
+    left: 100%;
   }
-  
-  .test span{
-    position: absolute;
-  }
-  
-  .test span:nth-child(1){
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, #C29204);
-    animation: animation1 1s infinite;
-  }
-  
-  @keyframes animation1 {
-    0%{
-        left: -100%;
-    }
-    100%{
-        left: 100%;
-    }
-  }
-  
-  .test span:nth-child(2){
+}
+
+.emailBtn span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ebb000);
+  animation: animation2 1s infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes animation2 {
+  0% {
     top: -100%;
-    right: 0;
-    width: 1px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #C29204);
-    animation: animation2 1s infinite;
-    animation-delay: 0.25s;
   }
-  
-  @keyframes animation2 {
-    0% {
-      top: -100%;
-    }
-    100% {
-      top: 100%;
-    }
+  100% {
+    top: 100%;
   }
-  
-  .test span:nth-child(3){
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(270deg, transparent, #C29204);
-    animation: animation3 1s infinite;
-    animation-delay: 0.5s;
+}
+
+.emailBtn span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(270deg, transparent, #ebb000);
+  animation: animation3 1s infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes animation3 {
+  0% {
+    right: -100%;
   }
-  
-  @keyframes animation3 {
-    0% {
-      right: -100%;
-    }
-    100% {
-      right: 100%;
-    }
+  100% {
+    right: 100%;
   }
-  
-  .test span:nth-child(4){
+}
+
+.emailBtn span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #ebb000);
+  animation: animation4 1s infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animation4 {
+  0% {
     bottom: -100%;
-    left: 0;
-    width: 1px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #C29204);
-    animation: animation4 1s infinite;
-    animation-delay: 0.75s;
   }
-  
-  @keyframes animation4 {
-    0% {
-      bottom: -100%;
-    }
-    100% {
-      bottom: 100%;
-    }
+  100% {
+    bottom: 100%;
   }
+}

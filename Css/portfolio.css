@@ -7,7 +7,7 @@ Nav underline
   content: "";
   width: 100%;
   height: 0.2rem;
-  background-color: #c29204;
+  background-color: #ebb000;
   display: block;
 }
 .weirdThing {
@@ -16,7 +16,7 @@ Nav underline
 }
 
 .header__head {
-  background-color: #c29204;
+  background-color: #ebb000;
   width: 100%;
   height: 6rem;
   display: flex;
