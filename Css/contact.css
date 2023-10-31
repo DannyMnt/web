@@ -86,10 +86,12 @@ li {
   margin-bottom: 5rem;
 }
 .stacker {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.2rem;
+  margin-bottom: 3rem;
 }
 
 .nav-link {
@@ -102,12 +104,15 @@ li {
 .emailBtn {
   margin-top: 1rem;
   font-weight: normal;
-  position: relative;
+  position: absolute;
   display: inline-block;
   color: #ebb000;
   text-decoration: none;
   overflow: hidden;
   transition: 0.5s;
+  transform: translate(-50%, -50%);
+  bottom: -25%;
+  left: 50%;
 }
 
 .emailBtn span {
