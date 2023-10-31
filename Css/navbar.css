@@ -1,10 +1,12 @@
 /* Jan Kalina */
 
 body {
-  font-family: "IBM Plex Mono", monospace;
-  background-color: #dcdcdc;
+  font-family: "Raleway", sans-serif;
+  background-color: #DCDCDC;
   margin: 0;
+  animation: transition 0.5s;
 }
+
 #navbar {
   z-index: 2;
   width: 100%;
@@ -12,7 +14,7 @@ body {
 }
 
 .navbar-brand {
-  color: black;
+  color: rgb(66, 66, 66);
   font-weight: bold;
   font-size: 2rem;
 }
@@ -27,5 +29,14 @@ body {
 }
 
 .nav-link {
-  color: black;
+  color: rgb(66, 66, 66);
+}
+
+@keyframes transition {
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
 }
