@@ -63,35 +63,18 @@ body{
 }
 
 
-.biggerContainer{
-    max-width: 1400px;
-}
-
 
 .projectList{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
 }
 
 .list li{
   border-color: #C29204;
   
 }
-
-.header {
-  background-color: #ebb000;
-  width: 100%;
-  height: 6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 1.3rem;
-  margin-bottom: 5rem;
-}
-
 
 .outerProgress{
     
@@ -100,13 +83,13 @@ body{
     border-radius: 1.875rem;
     background: #3F3D3D;
     width: 100%;
-    height: 30px;
+    height: 15px;
 }
 
 .innerProgress{
     border-radius: 1.875rem;
     background: #ebb000;   
-    height: 30px; 
+    height: 15px; 
     color: black;  
     height: 100%;
 }
@@ -116,12 +99,31 @@ body{
     border: none;
     border-radius: 10px;  
     margin: 1rem;
-    height: 46rem;
     animation: animation linear both;
     animation-timeline: view();
     animation-range: entry -20% cover 50%;
+    padding: 2rem;
+    background-color: white;
+    display: grid;
+    grid-template-rows: .4fr 30px 2fr 1fr 50px 30px;
+    gap: 20px;
 }
 
+
+.cardHeader{
+  grid-row: 1/2;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  
+}
+
+
+.cardHeaderName{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
 
 .projectBadge {
     background-color: #FFBB02;
@@ -134,25 +136,23 @@ body{
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    margin: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.projectDate{
+  margin-bottom: 2rem;
+  grid-row: 2/3;
 }
 
 .cardImage {
+  grid-row: 3/4;
   width: 100%;
   max-width: 100%;
   height: 100%;
   max-height: 100%;
   border-radius: 10px;
+  margin-bottom: 2rem;
+  object-fit: cover;
 }
 
-
-/*So the images arent as streched on tablets*/
-  @media screen and (max-width: 992px)  and (min-width: 768px) {
-    .projectCard {
-        border: none;
-        border-radius: 10px;  
-        margin: 1rem;
-        height: 58rem;
-    }
-  }
-    
