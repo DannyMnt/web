@@ -4,6 +4,7 @@ body {
   font-family: "Raleway", sans-serif;
   background-color: #dcdcdc;
   margin: 0;
+  padding: 0;
   animation: animation 0.5s;
 }
 
@@ -78,8 +79,6 @@ li {
   animation-timeline: view();
   animation-range: entry -20% cover 40%;
 }
-
-
 
 .info{
   display: flex;
@@ -200,6 +199,8 @@ h1{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .row1{
