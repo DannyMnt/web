@@ -1,8 +1,8 @@
 /* Coded by Daniel Munteanu */
 
 body {
-  font-family: "IBM Plex Mono", monospace;
-  background-color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  background-color: #dcdcdc;
   margin: 0;
   animation: animation 0.5s;
 }
@@ -12,6 +12,15 @@ body {
     opacity: 0;
   }
   to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from{
+    opacity: 0;
+  }
+  to{
     opacity: 1;
   }
 }
@@ -53,11 +62,54 @@ li {
   align-items: center;
   color: white;
   font-size: 1.3rem;
-  margin-bottom: 5rem;
 }
 
 .nav-link {
   color: rgb(66, 66, 66);
+}
+
+.generalInfo{
+  text-align: justify;
+  margin-left: 10rem;
+  margin-right: 10rem; 
+}
+
+.generalInfo img{
+  width: 50%;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.infoRow{
+  margin-bottom: 4rem;
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: entry -20% cover 40%;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebb000;
+  color: white;
+  width: 30%;
+}
+
+.h2{
+  font-weight: bold;
+}
+
+.info p{
+  margin: 2rem;
+  font-size: 1.2rem;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
 }
 
 .img-container {
@@ -66,6 +118,7 @@ li {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 .img-container img {
@@ -158,13 +211,23 @@ li {
   .buttons {
     gap: 0.1rem;
   }
+
+  .info p{
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 990px) {
-  #img1,
-  #img2,
-  #img3,
-  #img4 {
-    padding: 2%;
+  .info{
+    width: 100%;
+  }
+  .generalInfo{
+    margin: 2rem;
+  }
+  .generalInfo img{
+    padding: 0;
+  }
+  .info p{
+    font-size: 1rem;
   }
 }
