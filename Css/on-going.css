@@ -118,7 +118,6 @@ body{
   
 }
 
-
 .cardHeaderName{
   display: flex;
   flex-direction: row;
@@ -193,6 +192,7 @@ body{
   #footerList a{
     text-decoration: none;
     color: white;
+    font-size: 1.5rem
   }
 
   @media screen and (max-width: 768px) {
