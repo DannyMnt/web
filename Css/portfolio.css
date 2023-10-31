@@ -39,11 +39,19 @@ Nav underline
   justify-self: center;
   position: relative;
   margin-bottom: 3rem;
+  /* border-radius: 5rem; */
+}
+.main__ul--li__div {
+  position: relative;
 }
 .main__ul--li__img {
   width: 100%;
   filter: brightness(100%);
   transition: -webkit-filter 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.main__ul--li__text {
+  background-color: white;
+  padding: 1rem;
 }
 
 .main__ul--li__header {
