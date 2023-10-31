@@ -16,15 +16,6 @@ body {
   }
 }
 
-@keyframes fade {
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
-
 .nav-item:nth-child(1)::after {
   content: "";
   width: 100%;
@@ -82,7 +73,7 @@ li {
 
 .infoRow{
   margin-bottom: 4rem;
-  animation: fade linear both;
+  animation: animation linear both;
   animation-timeline: view();
   animation-range: entry -20% cover 40%;
 }
