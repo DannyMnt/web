@@ -141,7 +141,7 @@ h1{
   transform: translate(0%, 0%);
   color: white;
   text-align: center;
-  width: 100%;
+  width: 90%;
   bottom: 0;
 }
 
@@ -156,7 +156,6 @@ h1{
   padding: 10%;
 }
 
-.seeImagesBtn,
 .orderBtn {
   background-color: transparent;
   border: 3px solid #ebb000;
@@ -191,8 +190,7 @@ h1{
   cursor: pointer;
 }
 
-.orderBtn:hover,
-.seeImagesBtn:hover {
+.orderBtn:hover{
   filter: brightness(115%);
   transition: ease-in 0.25s;
 }
@@ -234,13 +232,6 @@ h1{
 #footerList a{
   text-decoration: none;
   color: white;
-}
-
-@media screen and (max-width: 1600px) {
-  .seeImagesBtn,
-  .orderBtn {
-    width: 7rem;
-  }
 }
 
 @media screen and (max-width: 1200px) {
