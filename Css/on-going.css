@@ -32,6 +32,7 @@ body{
   color: black;
   font-weight: bold;
   font-size: 2rem;
+  margin-left: -0.8rem;
 }
 
 #navbar li {
